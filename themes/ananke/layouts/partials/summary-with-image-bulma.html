@@ -1,0 +1,63 @@
+<article class="block box">
+    <div class="has-background-white p-4">
+        <div class="columns">
+            {{/*<div class="column is-5">*/}}
+            {{/*{{ if $featured_image }}*/}}
+            {{/*{{ $featured_image := (trim $featured_image "/") | absURL }}*/}}
+            {{/*<figure class="image is-5by3">*/}}
+            {{/*<a href="{{.Permalink}}">*/}}
+            {{/*<img src="{{ $featured_image }}" class="img" alt="image from {{ .Title }}">*/}}
+            {{/*</a>*/}}
+            {{/*</figure>*/}}
+            {{/*{{ end }}*/}}
+            {{/*</div>*/}}
+            <div class="column ">
+                <div class="content">
+                    <a href="{{.Permalink}}">
+                        <h1 class="title">
+                            {{ .Title }}
+                        </h1>
+                    </a>
+
+                    <div class="columns">
+                        <div class="column">
+                            {{- partial "tags-bulma.html" . -}}
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                            {{ with .Params.author }}
+                            <span class="m-1">
+                                {{ if reflect.IsSlice . }}
+                                    {{ delimit . ", " | markdownify }}
+                                {{else}}
+                                    {{ . | markdownify }}
+                                {{ end }}
+                            </span>
+                            {{ end }}
+                            <span class="m-1">
+                                {{- .Date.Format "2006-01-02 03:04" -}}
+                            </span>
+                    </div>
+                    <p class="has-text-weight-light">
+                        {{ .Summary }}
+                    </p>
+                </div>
+                <nav class="level is-mobile">
+                    <div class="level-left">
+                        <a class="level-item">
+                            <span class="icon is-small"><i class="fas fa-reply"></i></span>
+                        </a>
+                        <a class="level-item">
+                            <span class="icon is-small"><i class="fas fa-retweet"></i></span>
+                        </a>
+                        <a class="level-item">
+                            <span class="icon is-small"><i class="fas fa-heart"></i></span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <div class="media-right">
+            </div>
+        </div>
+    </div>
+</article>
