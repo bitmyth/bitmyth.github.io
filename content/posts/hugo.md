@@ -1,12 +1,11 @@
 ---
 title: "HuGo基本使用和部署"
-date: 2021-1-23T22:39:54+08:00
+date: 2021-01-23T22:39:54+08:00
 summary: "HuGo基本使用和部署"
 draft: false
 toc: true
 tags: ['docker','hugo']
 author: "bitmyth"
-
 
 ---
 
