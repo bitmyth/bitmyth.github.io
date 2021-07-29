@@ -106,7 +106,7 @@ bitmyth
 </span>
 </div>
 </header>
-<div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h1 id=hugo部署简介>HuGo部署简介</h1>
+<div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h2 id=hugo部署简介>HuGo部署简介</h2>
 <p>HuGo是一个静态网站生成工具，支持多种主题。主题可插拔，可覆盖，支持极高的可定制性和灵活性。</p>
 <p>创建新文章，命令如下：</p>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>hugo new posts/demo.md
@@ -123,7 +123,7 @@ bitmyth
   Aliases          |  2  
   Sitemaps         |  1  
   Cleaned          |  0  
-</code></pre><h1 id=web-服务>WEB 服务</h1>
+</code></pre><h2 id=web-服务>WEB 服务</h2>
 <p>开发环境下启动WEB服务，修改内容后支持实时可见，命令如下：</p>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>hugo server
 </code></pre></div><p>命令输出类似如下：</p>
@@ -148,7 +148,7 @@ Web Server is available at //localhost:1313/ (bind address 127.0.0.1)
 Press Ctrl+C to stop
 </code></pre><p>生成静态资源后</p>
 <p>会生成public文件夹，其中包含网站的所有静态资源。</p>
-<h1 id=部署>部署</h1>
+<h2 id=部署>部署</h2>
 <p>可以使用nginx容器部署网站</p>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>docker run -p80:80  -v <span style=color:#66d9ef>$(</span>pwd<span style=color:#66d9ef>)</span>/public:/usr/share/nginx/html:ro -d nginx
 </code></pre></div><p>或者docker-compose，编写docker-compose.yaml内容如下：</p>
@@ -169,7 +169,13 @@ Press Ctrl+C to stop
 </div>
 <aside class="w-30-l mt6-l"><div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
 <p class="f5 b mb3">这是什么 posts</p>
-<nav id=TableOfContents></nav>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#hugo部署简介>HuGo部署简介</a></li>
+<li><a href=#web-服务>WEB 服务</a></li>
+<li><a href=#部署>部署</a></li>
+</ul>
+</nav>
 </div>
 <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
 <p class="f5 b mb3">相关內容</p>
