@@ -14,7 +14,7 @@ description: A few years ago
 
 熟悉 Go PHP JAVA JS
 
-对微服务，容器技术感兴趣
+对微服务，容器等云原生技术感兴趣
 
 # 联系方式
 
