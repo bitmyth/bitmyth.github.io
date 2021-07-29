@@ -1,4 +1,4 @@
-baseURL = "https://kaifalu.com/"
+baseURL = ""
 relativeURLs = true
 languageCode = "zh-cn"
 title = "kaifalu"
