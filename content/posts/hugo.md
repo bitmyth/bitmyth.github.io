@@ -13,7 +13,7 @@ author: "bitmyth"
 
 
 
-# HuGo部署简介
+## HuGo部署简介
 
 HuGo是一个静态网站生成工具，支持多种主题。主题可插拔，可覆盖，支持极高的可定制性和灵活性。
 
@@ -44,7 +44,7 @@ hugo
   Cleaned          |  0  
 ```
 
-# WEB 服务
+## WEB 服务
 
 开发环境下启动WEB服务，修改内容后支持实时可见，命令如下：
 
@@ -80,7 +80,7 @@ Press Ctrl+C to stop
 
 会生成public文件夹，其中包含网站的所有静态资源。
 
-# 部署
+## 部署
 
 可以使用nginx容器部署网站
 
@@ -109,4 +109,3 @@ services:
 ```bash
 docker-compose up -d
 ```
-
