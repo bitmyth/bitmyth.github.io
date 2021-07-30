@@ -1,7 +1,7 @@
 ---
 title: "Hooks"
 date: 2021-07-30T09:58:50+08:00
-summary: "HuGo基本使用和部署"
+summary: "HTTP请求触发执行任务的简单服务器，使用Go实现"
 draft: false
 toc: true
 tags: ['docker','tool']
