@@ -79,6 +79,50 @@ Code panel
 <div class=columns>
 <div class=column>
 <div class=content>
+<a href=./posts/hooks/>
+<h1 class=title>
+Hooks
+</h1>
+</a>
+<div class=columns>
+<div class=column>
+</div>
+</div>
+<div class=mb-3>
+<span class=m-1>2021-07-30 09:58</span>
+</div>
+<p class=has-text-weight-light>
+编写一个HTTP Hook简单服务器程序，发送HTTP请求触发执行预定义的任务。
+使用Go语言编写，新建文件main.go，编辑如下：
+package main import ( "bytes" "fmt" "gopkg.in/yaml.v2" "log" "net/http" "os/exec" ) type Job struct { Name string HookUrl string Command []string } type T struct { Jobs []Job } func IndexHandler(writer http.ResponseWriter, request *http.Request) { path := request.URL.Path println("path", path) fmt.Printf("%v", t) for _, job := range t.Jobs { println(job.HookUrl) if job.Name == path { println("matched", job.HookUrl) c := &Cli{} cmd := exec.Command(job.Command[0], job.Command[1]) o, _ := (c.
+</p>
+</div>
+<nav class="level is-mobile">
+<div class=level-left>
+<a class=level-item>
+<span class="icon is-small"><i class="fas fa-reply"></i></span>
+</a>
+<a class=level-item>
+<span class="icon is-small"><i class="fas fa-retweet"></i></span>
+</a>
+<a class=level-item>
+<span class="icon is-small"><i class="fas fa-heart"></i></span>
+</a>
+</div>
+</nav>
+</div>
+<div class=media-right>
+</div>
+</div>
+</div>
+</article>
+</div>
+<div class=mb-4>
+<article class="block box">
+<div class="has-background-white p-4">
+<div class=columns>
+<div class=column>
+<div class=content>
 <a href=./posts/hugo/>
 <h1 class=title>
 HuGo基本使用和部署
@@ -274,57 +318,14 @@ traefik 是 go 语言编写的反向代理软件，本文介绍 docker 方式启
 </div>
 </article>
 </div>
-<div class=mb-4>
-<article class="block box">
-<div class="has-background-white p-4">
-<div class=columns>
-<div class=column>
-<div class=content>
-<a href=./posts/octet-vs-byte/>
-<h1 class=title>
-octet 和 byte 有什么区别
-</h1>
-</a>
-<div class=columns>
-<div class=column>
-<span>
-<a href=./tags/docker/ class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">docker</a>
-</span>
-</div>
-</div>
-<div class=mb-3>
-<span class=m-1>
-bitmyth
-</span>
-<span class=m-1>2020-11-23 10:39</span>
-</div>
-<p class=has-text-weight-light>
-octet 和 byte 有什么区别
-</p>
-</div>
-<nav class="level is-mobile">
-<div class=level-left>
-<a class=level-item>
-<span class="icon is-small"><i class="fas fa-reply"></i></span>
-</a>
-<a class=level-item>
-<span class="icon is-small"><i class="fas fa-retweet"></i></span>
-</a>
-<a class=level-item>
-<span class="icon is-small"><i class="fas fa-heart"></i></span>
-</a>
-</div>
-</nav>
-</div>
-<div class=media-right>
-</div>
-</div>
-</div>
-</article>
-</div>
 </section>
 <section class=w-100>
 <h1 class=f3>更多</h1>
+<h2 class="f5 fw4 mb4 dib mr3">
+<a href=./posts/octet-vs-byte/ class="link black dim">
+octet 和 byte 有什么区别
+</a>
+</h2>
 <h2 class="f5 fw4 mb4 dib mr3">
 <a href=./posts/k3s/ class="link black dim">
 </a>

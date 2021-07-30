@@ -75,6 +75,22 @@ Code panel
 <div class="bg-white mb3 pa4 gray overflow-hidden">
 <span class="f6 db">Posts</span>
 <h1 class="f3 near-black">
+<a href=../posts/hooks/ class="link black dim">
+Hooks
+</a>
+</h1>
+<div class="nested-links f5 lh-copy nested-copy-line-height">
+编写一个HTTP Hook简单服务器程序，发送HTTP请求触发执行预定义的任务。
+使用Go语言编写，新建文件main.go，编辑如下：
+package main import ( "bytes" "fmt" "gopkg.in/yaml.v2" "log" "net/http" "os/exec" ) type Job struct { Name string HookUrl string Command []string } type T struct { Jobs []Job } func IndexHandler(writer http.ResponseWriter, request *http.Request) { path := request.URL.Path println("path", path) fmt.Printf("%v", t) for _, job := range t.Jobs { println(job.HookUrl) if job.Name == path { println("matched", job.HookUrl) c := &Cli{} cmd := exec.Command(job.Command[0], job.Command[1]) o, _ := (c.
+</div>
+</div>
+</div>
+</div>
+<div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+<div class="bg-white mb3 pa4 gray overflow-hidden">
+<span class="f6 db">Posts</span>
+<h1 class="f3 near-black">
 <a href=../posts/hugo/ class="link black dim">
 HuGo基本使用和部署
 </a>
