@@ -9,24 +9,18 @@
 <link href=../../dist/css/app.4fc0b62e4b82c997bb0041217cd6b979.css rel=stylesheet>
 <link rel=stylesheet href=../../css/mystyles.css>
 <meta property="og:title" content="Hooks">
-<meta property="og:description" content="编写一个HTTP Hook简单服务器程序，发送HTTP请求触发执行预定义的任务。
-使用Go语言编写，新建文件main.go，编辑如下：
-package main import ( &#34;bytes&#34; &#34;fmt&#34; &#34;gopkg.in/yaml.v2&#34; &#34;log&#34; &#34;net/http&#34; &#34;os/exec&#34; ) type Job struct { Name string HookUrl string Command []string } type T struct { Jobs []Job } func IndexHandler(writer http.ResponseWriter, request *http.Request) { path := request.URL.Path println(&#34;path&#34;, path) fmt.Printf(&#34;%v&#34;, t) for _, job := range t.Jobs { println(job.HookUrl) if job.Name == path { println(&#34;matched&#34;, job.HookUrl) c := &Cli{} cmd := exec.Command(job.Command[0], job.Command[1]) o, _ := (c.">
+<meta property="og:description" content="HuGo基本使用和部署">
 <meta property="og:type" content="article">
 <meta property="og:url" content="/posts/hooks/"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2021-07-30T09:58:50+08:00">
 <meta property="article:modified_time" content="2021-07-30T09:58:50+08:00">
 <meta itemprop=name content="Hooks">
-<meta itemprop=description content="编写一个HTTP Hook简单服务器程序，发送HTTP请求触发执行预定义的任务。
-使用Go语言编写，新建文件main.go，编辑如下：
-package main import ( &#34;bytes&#34; &#34;fmt&#34; &#34;gopkg.in/yaml.v2&#34; &#34;log&#34; &#34;net/http&#34; &#34;os/exec&#34; ) type Job struct { Name string HookUrl string Command []string } type T struct { Jobs []Job } func IndexHandler(writer http.ResponseWriter, request *http.Request) { path := request.URL.Path println(&#34;path&#34;, path) fmt.Printf(&#34;%v&#34;, t) for _, job := range t.Jobs { println(job.HookUrl) if job.Name == path { println(&#34;matched&#34;, job.HookUrl) c := &Cli{} cmd := exec.Command(job.Command[0], job.Command[1]) o, _ := (c."><meta itemprop=datePublished content="2021-07-30T09:58:50+08:00">
+<meta itemprop=description content="HuGo基本使用和部署"><meta itemprop=datePublished content="2021-07-30T09:58:50+08:00">
 <meta itemprop=dateModified content="2021-07-30T09:58:50+08:00">
 <meta itemprop=wordCount content="187">
-<meta itemprop=keywords content><meta name=twitter:card content="summary">
+<meta itemprop=keywords content="docker,tool,"><meta name=twitter:card content="summary">
 <meta name=twitter:title content="Hooks">
-<meta name=twitter:description content="编写一个HTTP Hook简单服务器程序，发送HTTP请求触发执行预定义的任务。
-使用Go语言编写，新建文件main.go，编辑如下：
-package main import ( &#34;bytes&#34; &#34;fmt&#34; &#34;gopkg.in/yaml.v2&#34; &#34;log&#34; &#34;net/http&#34; &#34;os/exec&#34; ) type Job struct { Name string HookUrl string Command []string } type T struct { Jobs []Job } func IndexHandler(writer http.ResponseWriter, request *http.Request) { path := request.URL.Path println(&#34;path&#34;, path) fmt.Printf(&#34;%v&#34;, t) for _, job := range t.Jobs { println(job.HookUrl) if job.Name == path { println(&#34;matched&#34;, job.HookUrl) c := &Cli{} cmd := exec.Command(job.Command[0], job.Command[1]) o, _ := (c.">
+<meta name=twitter:description content="HuGo基本使用和部署">
 </head>
 <body class="ma0 avenir bg-near-white">
 <header>
@@ -99,6 +93,12 @@ POSTS
 <span class="f6 mv4 dib tracked"> - 1 minutes read</span>
 <span class="f6 mv4 dib tracked"> - 187 words</span>
 <div class="container mb-5">
+<span>
+<a href=../../tags/docker/ class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">docker</a>
+</span>
+<span>
+<a href=../../tags/tool/ class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">tool</a>
+</span>
 </div>
 </header>
 <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>编写一个HTTP Hook简单服务器程序，发送HTTP请求触发执行预定义的任务。</p>
@@ -197,7 +197,24 @@ POSTS
 </code></pre></div><div class="mt6 instapaper_ignoref">
 </div>
 </div>
-<aside class="w-30-l mt6-l">
+<aside class="w-30-l mt6-l"><div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+<p class="f5 b mb3">这是什么 posts</p>
+<nav id=TableOfContents></nav>
+</div>
+<div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+<p class="f5 b mb3">相关內容</p>
+<ul class="pa0 list">
+<li class=mb2>
+<a href=../../posts/hugo/>HuGo基本使用和部署</a>
+</li>
+<li class=mb2>
+<a href=../../posts/octet-vs-byte/>octet 和 byte 有什么区别</a>
+</li>
+<li class=mb2>
+<a href=../../posts/docker-insatll/>docker</a>
+</li>
+</ul>
+</div>
 </aside>
 </article>
 </main>

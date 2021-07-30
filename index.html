@@ -86,15 +86,19 @@ Hooks
 </a>
 <div class=columns>
 <div class=column>
+<span>
+<a href=./tags/docker/ class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">docker</a>
+</span>
+<span>
+<a href=./tags/tool/ class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">tool</a>
+</span>
 </div>
 </div>
 <div class=mb-3>
 <span class=m-1>2021-07-30 09:58</span>
 </div>
 <p class=has-text-weight-light>
-编写一个HTTP Hook简单服务器程序，发送HTTP请求触发执行预定义的任务。
-使用Go语言编写，新建文件main.go，编辑如下：
-package main import ( "bytes" "fmt" "gopkg.in/yaml.v2" "log" "net/http" "os/exec" ) type Job struct { Name string HookUrl string Command []string } type T struct { Jobs []Job } func IndexHandler(writer http.ResponseWriter, request *http.Request) { path := request.URL.Path println("path", path) fmt.Printf("%v", t) for _, job := range t.Jobs { println(job.HookUrl) if job.Name == path { println("matched", job.HookUrl) c := &Cli{} cmd := exec.Command(job.Command[0], job.Command[1]) o, _ := (c.
+HuGo基本使用和部署
 </p>
 </div>
 <nav class="level is-mobile">
