@@ -4,7 +4,7 @@ date: 2021-07-30T09:58:50+08:00
 summary: "HTTP请求触发执行任务的简单服务器，使用Go实现"
 draft: false
 toc: true
-tags: ['docker','tool']
+tags: ['go','hook','docker','tool']
 ---
 
  编写一个HTTP Hook简单服务器程序，发送HTTP请求触发执行预定义的任务。
